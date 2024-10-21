@@ -473,7 +473,7 @@ begin
   hx2:=Rec.Bytes[1];
   hx3:=Rec.Bytes[2];
   hx4:=Rec.Bytes[3];
-  vers:=IntToStr(hx2)+IntToStr(hx1)+'.'+IntToStr(hx4)+IntToStr(hx3);
+  vers:=IntToStr(hx4)+IntToStr(hx3)+'.'+IntToStr(hx2)+IntToStr(hx1);
   Form1.Caption:='  '+Application.Title+'            Version '+vers+'                   <'+BUser+'>';
   Label1.Caption:=UTF8Encode(#169)+'LINSOFT               P R O G D I A G                   Datum: '+FormatDateTime('DD.MM.YYYY',now);
 end;
