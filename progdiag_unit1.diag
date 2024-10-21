@@ -1,0 +1,181 @@
+Projekt: progdiag
+Unit: unit1
+Varname: Form1
+Varart: TForm1
+Varkurz: Formular (Windows-Fenster)
+Varname: JaNein
+Varart: word
+Varkurz: Ergebnis Ja/Nein Abfrage
+Varname: Closestat
+Varart: integer
+Varkurz: Merker ob Programm beendet werden darf. 0=Ja 1=Nein
+Varname: abbruch
+Varart: Boolean
+Varkurz: Programm-Abbruch. Wenn True wird ohne Abfrage das Programm abgebrochen
+Varname: mtasts
+Varart: integer
+Varkurz: Dürfen die Buttons betätigt werden. 1=Ja 0=Nein
+Varname: mlauf
+Varart: integer
+Varkurz: Welche Eingabe ist zulässig (1..n) 0=keine Eingabe
+Varname: mart
+Varart: integer
+Varkurz: Art der bearbeitung. 1=Anlegen, 2=Updaten, 3=Löschen
+Varname: Tag
+Varart: integer
+Varkurz: Datum Tag
+Varname: Monat
+Varart: integer
+Varkurz: Datum Monat
+Varname: Jahr
+Varart: integer
+Varkurz: Datum Jahr
+Varname: BUser
+Varart: string
+Varkurz: Username der angemeldet ist
+Varname: FSatz
+Varart: string
+Varkurz: Hilfsvariable
+Varname: sta
+Varart: integer
+Varkurz: Status für Initialisierung der Variablen bei Programmstart. 1=vor Init, 2=nach Init
+Varname: vers
+Varart: string
+Varkurz: Versionsnummer des Programms
+Varname: pfad
+Varart: string
+Varkurz: Verzeichnis der Datenfiles
+Varname: filename
+Varart: string
+Varkurz: Filename des lpi-Files
+Varname: fileadr
+Varart: TextFile
+Varkurz: Opennummer eines Textfiles (Assign)
+Varname: einheitname
+Varart: string
+Varkurz: Unitname
+Varname: Datenanzeigeart
+Varart: integer
+Varkurz: Anzeigeart für StringGrid. 1=Variable 2=Procedure/Funktion
+Varname: progname
+Varart: string
+Varkurz: Projektname
+Varname: unitnamet
+Varart: array [1..50, 1..2] of string
+Varkurz: Temporäre Tabelle Unitnamen
+Varname: unitzaehlt
+Varart: integer
+Varkurz: Zähler temporäre Tabelle Unitnamen
+Varname: unitnamen
+Varart: array [1..50] of string
+Varkurz: Tabelle Unitnamen
+Varname: unitzaehl
+Varart: integer
+Varkurz: Zähler Tabelle Unitnamen
+Varname: varname
+Varart: array [1..500] of tvarn
+Varkurz: Tabelle Variable
+Varname: varzaehl
+Varart: integer
+Varkurz: Zähler Tabelle Variable
+Varname: prozname
+Varart: array [1..500] of tprozn
+Varkurz: Tabelle Procedure/Funktion
+Varname: prozzaehl
+Varart: integer
+Varkurz: Zähler Tabelle Procedure/Funktion
+Varname: egrid
+Varart: integer
+Varkurz: angeklickte Zeilennummer im StringGrid1
+Varname: tabnummer
+Varart: integer
+Varkurz: Index der angeklickte Zeilennummer in den Tabellen prozname oder varname
+Varname: gridklick
+Varart: Boolean
+Varkurz: StringGrid1 anklicken zulässig
+Varname: drucker
+Varart: string
+Varkurz: Druckername
+Varname: druckn
+Varart: integer
+Varkurz: Druckernummer für Tabelle
+Varname: px
+Varart: integer
+Varkurz: X aktuell in Pixel
+Varname: py
+Varart: integer
+Varkurz: Y aktuell in Pixel
+Varname: vpx
+Varart: integer
+Varkurz: X-Differenz in Pixel
+Varname: vpy
+Varart: integer
+Varkurz: Y-Differenz in Pixel
+Varname: format
+Varart: TPrinterOrientation
+Varkurz: Druckerformat
+Varname: seite
+Varart: integer
+Varkurz: Seitenanzahl Frucker
+Varname: zeile
+Varart: integer
+Varkurz: Zeilenanzahl Drucker
+Progname: procedure Button1Click(Sender: TObject)
+Progkurz: Laden lpr-File
+Proglang: Projektname und Anzahl Units in Label6 anzeigen und ComboBox1 
+Proglang: mit Units laden
+Progname: procedure Button2Click(Sender: TObject)
+Progkurz: Programm beenden mit Sicherheitsabfrage
+Progname: procedure Button3Click(Sender: TObject)
+Progkurz: Springen zwischen Variablen und Procedure/Funktion im StringGrid1
+Progname: procedure Button4Click(Sender: TObject)
+Progkurz: Erfassen Kurztext (Edit1) und bei Procedure/Funktion Langtext (Memo1)
+Progname: procedure Button5Click(Sender: TObject)
+Progkurz: Drucken Projekt/Unit (Querformat)
+Progname: procedure Button6Click(Sender: TObject)
+Progkurz: Laden Projekt/Unit von File (.diag)
+Progname: procedure Button7Click(Sender: TObject)
+Progkurz: Saven Projekt/Unit in File (projektname_Unitname)
+Progname: procedure ComboBox1Change(Sender: TObject)
+Progkurz: Auswahl der Unit die angezeigt werden soll
+Progname: procedure Edit1KeyPress(Sender: TObject; var Key: char)
+Progkurz: Prüfung der Eingabe mit Modul Eingabe
+Progname: procedure Edit1KeyUp(Sender: TObject; var Key: Word)
+Progkurz: Auswertung der Eingabe, abspeichern und weiter leiten
+Progname: procedure FormActivate(Sender: TObject)
+Progkurz: Initialisierung der Variablen und Form-Elemente
+Progname: procedure FormClose(Sender: TObject; var CloseAction: TCloseAction)
+Progkurz: Programm beenden
+Progname: procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean)
+Progkurz: Abfrage ob Programm beendet werden soll
+Progname: procedure FormCreate(Sender: TObject)
+Progkurz: Initialisierung der Variablen und Form-Elemente
+Progname: procedure Memo1KeyDown(Sender: TObject; var Key: Word)
+Progkurz: Abfrage auf RSC-Taste und speichern des Textes in Tabelle prozname
+Progname: procedure StringGrid1SelectCell(Sender: TObject; aCol, aRow: Integer
+Progkurz: Merken, welche Zeile im StringGrid1 angeklickt wurde
+Progname: function Nummer(Komma: Boolean; var Ntextstring: string): string
+Progkurz: prüfen ob Ntextstring numerisch ist
+Proglang: wenn nicht wird Result leer zurück gegeben
+Proglang: Kamma=True wenn Komma erlaubt ist
+Proglang: Bei Komma wird aus '.' ein ',' gemacht
+Progname: function Blankweg(Art: integer; var Btextstring: string): string
+Progkurz: Blanks in Btextstring entfernen und in Result zurück geben
+Proglang: Art 1 = vor dem Text
+Proglang: Art 2 = hinter dem Text
+Proglang: Art 3 = vor und hinter dem Text
+Progname: function Blankdazu(Pos, Lan: integer; var Htextstring: string): string
+Progkurz: Blanks im Htextstring einfügen und in Result zurück geben
+Proglang: Lan = Ausgabelänge von Result
+Proglang: Pos 1 = vor dem Text
+Proglang: Pos 2 = hinter dem Text
+Progname: procedure AnzeigeLoe
+Progkurz: Löschen alle Ein- und Ausgabefelder der Bildschirmanzeige
+Progname: procedure LadenVariable
+Progkurz: Laden Tabelle varname ins Stringgrid
+Progname: procedure LadenProcedure
+Progkurz: Laden Tabelle prozname ins Stringgrid
+Progname: procedure Kopfvar
+Progkurz: Überschrift für Variable drucken
+Progname: procedure Kopfproc; public
+Progkurz: Überschrift für Procedure/Funktion drucken
