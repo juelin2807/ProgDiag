@@ -685,6 +685,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
+    ScrollBars = ssBoth
     TabOrder = 8
     OnKeyDown = Memo1KeyDown
   end
