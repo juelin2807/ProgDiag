@@ -361,6 +361,8 @@ begin
       begin
         zeichen:=Btextstring;
         ausgabe:=Copy(zeichen,vari12,laenge-(vari12-1));
+      end else begin
+        ausgabe:='';
       end;
     end;
     laenge:=Length(ausgabe);
@@ -384,6 +386,8 @@ begin
         begin
           zeichen:=ausgabe;
           ausgabe:=Copy(zeichen,1,vari12);
+        end else begin
+          ausgabe:='';
         end;
       end;
     end else begin
